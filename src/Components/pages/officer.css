@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+
+ .wrapperch1 {
+	 display: grid;
+	 grid-template-columns: repeat(auto-fit,minmax(14rem , 24rem));
+	 gap: 1rem;
+	 justify-content: center;
+	 margin-top: 1rem;
+}
+
+.forHed{
+	display: grid;
+	grid-template-columns: repeat(auto,( 200px ,200px));
+	justify-self: center;
+	justify-content: center;
+	background-color: #242526;
+	margin-top: 1rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	color: #ffffff;
+	border-radius: 1rem;
+	box-shadow: 0 2px 2px #2c7479;
+}
+
+ .card2 {
+	 overflow: hidden;
+	 background-color: #ffffff;
+	 
+	 box-shadow: 0 2px 20px #434e68;
+	 border-radius: 0.6rem;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-between;
+	 transition: transform 200ms ease-in;
+   width: 330px;
+   align-items: center;
+   justify-self: center;
+
+}
+ .card__image2 {
+	 height: 15rem;
+	 width: 100%;
+	 object-fit:fill;
+}
+ .card__title2 {
+	 padding: 1rem;
+	 
+}
+ .card__description2 {
+	 padding: 0 1rem 1rem;
+	 
+}
+ .card__btn2 {
+	 padding: 1rem;
+	 font-family: inherit;
+	 font-weight: bold;
+	 font-size: 1rem;
+	 margin: 1rem;
+	 border: 2px solid #d50000;
+	 background: transparent;
+	 color: #d50000;
+	 border-radius: 0.2rem;
+	 transition: background 200ms ease-in, color 200ms ease-in;
+}
+ .card2:hover {
+	 transform: scale(1.02);
+}
+ .card2:hover .card__btn2 {
+	 background: #d50000;
+	 color: white;
+}
+
+
+@media (max-width: 970px) {
+	.wrapperch1 {
+	  grid-template-columns: repeat(2, 22rem);
+	}
+  }
+  
+  @media (max-width: 700px) {
+	.wrapperch1 {
+	  grid-template-columns: repeat(1, 10rem);
+	}
+
+	.wrapperch1 > .card2 {
+	  text-align: center;
+	}
+  }
+ 

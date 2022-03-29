@@ -1,0 +1,12 @@
+.bttun{
+background-color: #18f98f;
+border: none;
+transform: translate(-50%,-50%);
+cursor: pointer;
+padding: 2px 5px;
+font-size: 20px;
+font-weight: bold;
+border-radius: 4px;
+margin: 60%;
+
+}

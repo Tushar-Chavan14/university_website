@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+
+ .wrapperch {
+	 display: grid;
+	 grid-template-columns: repeat(3,0.3fr);
+	 gap: 1rem;
+	 justify-content: center;
+	margin-top: 1rem;
+}
+ .card1 {
+	 overflow: hidden;
+	 box-shadow: 0 2px 20px #4d5569;
+	 border-radius: 0.2rem;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-between;
+	 cursor: pointer;
+	 transition: transform 200ms ease-in;
+   width: 330px;
+   align-items: center;
+   justify-self: center;
+
+}
+ .card__image1 {
+	 height: 15rem;
+	 width: 100%;
+	 object-fit: cover;
+	 image-rendering: auto;
+}
+ .card__title1 {
+	 padding: 1rem;
+}
+ .card__description1 {
+	 padding: 0 1rem 1rem;
+}
+ .card__btn1 {
+	 padding: 1rem;
+	 font-family: inherit;
+	 font-weight: bold;
+	 font-size: 1rem;
+	 margin: 1rem;
+	 border: 2px solid #d50000;
+	 background: transparent;
+	 color: #d50000;
+	 border-radius: 0.2rem;
+	 transition: background 200ms ease-in, color 200ms ease-in;
+}
+ .card1:hover {
+	 transform: scale(1.02);
+}
+ .card1:hover .card__btn1 {
+	 background: #d50000;
+	 color: white;
+}
+
+
+@media (max-width: 970px) {
+	.wrapperch {
+	  grid-template-columns: repeat(2, 23rem);
+	}
+  }
+  
+  @media (max-width: 700px) {
+	.wrapperch {
+	  grid-template-columns: repeat(1, 10rem);
+	}
+  
+	.wrapperch > .card {
+	  text-align: center;
+	}
+  }
+ 
